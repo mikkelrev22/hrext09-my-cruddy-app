@@ -7,6 +7,8 @@
 - [ ] How to view data? (style?)
 - [ ] UI/UX considerations (how are we going to use this)
 
+
+
 */
 
 //localStorage interaction function
@@ -68,4 +70,16 @@ $(document).ready(function() {
       //current key doesnt exist, do stuff
     }
   });
+  $('#deleteButton').click(function(event) {
+    event.preventDefault();
+    var currentKey = $("#keyInput").val();
+    var currentValue = $("#valueInput").val();
+    if (keyExists(currentKey)) {
+      deleteItem(currentKey, currentValue);
+    }
+  });
+  $('#clearAll').click(function(event) {
+    clearEverything();
+  });
+
 });
