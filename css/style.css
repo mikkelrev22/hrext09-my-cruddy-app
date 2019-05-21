@@ -2,3 +2,29 @@
   input boxes
   buttons
 */
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background: url(https://i.pinimg.com/originals/6c/19/af/6c19af1e2d962baa3306b125c2cbb591.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+.text-container {
+	height: 800px;
+	width: 300px;
+	background-color: #31BF3F;
+	border: 1px solid black;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.food-quantity {
+	height: 100px;
+	width: 300px;
+	background-color: #F0D629;
+}
+.food-name {
+	height: 100px;
+	width: 300px;
+	background-color: #F0D629;
+}
